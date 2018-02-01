@@ -3,6 +3,8 @@ Keysort: Sorting Lists of Dictionaries
 
 **Keysort** is small utility for sorting lists of dictionaries by dictionary key.
 
+.. image:: https://travis-ci.org/nkantar/Keysort.svg?branch=master
+    :target: https://travis-ci.org/nkantar/Keysort
 .. image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg 
    :target: https://saythanks.io/to/nkantar
 

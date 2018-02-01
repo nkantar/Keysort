@@ -1,6 +1,12 @@
 # Keysort Changelog
 
 
+## Unreleased
+
+### Changed
+- Updated README with build status
+
+
 ## [0.1.1] - 2018-01-31
 
 ### Changed
