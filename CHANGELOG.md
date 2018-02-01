@@ -1,6 +1,12 @@
 # Keysort Changelog
 
 
+## [0.1.1] - 2018-01-31
+
+### Changed
+- Updated import instructions in README
+
+
 ## [0.1.0] - 2018-01-31
 
 ### Added
@@ -15,5 +21,6 @@
 - .gitignore
 
 
-[Unreleased]: https://github.com/nkantar/Keysort/compare/0.1.0...HEAD
+[Unreleased]: https://github.com/nkantar/Keysort/compare/0.1.1...HEAD
+[0.1.1]: https://github.com/nkantar/Keysort/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/nkantar/Keysort/releases/tag/0.1.0
