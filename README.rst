@@ -12,7 +12,7 @@ Examples
 
 .. code-block:: python
 
-    >>> import keysort
+    >>> from keysort import keysort
     >>> my_list = [{'code': 'beta',    'number': 3},
                    {'code': 'delta',   'number': 2},
                    {'code': 'alpha',   'number': 0},
