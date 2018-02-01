@@ -13,23 +13,23 @@ Examples
 .. code-block:: python
 
     >>> import keysort
-    >>> my_list = [{'code': 'beta', 'number': 3}, {'code': 'delta', 'number': 2}, {'code': 'alpha', 'number': 0}, {'code': 'beta', 'number': 2}, {'code': 'charlie', 'number': 1}]
+    >>> my_list = [{'code': 'beta',    'number': 3},
+                   {'code': 'delta',   'number': 2},
+                   {'code': 'alpha',   'number': 0},
+                   {'code': 'beta',    'number': 2},
+                   {'code': 'charlie', 'number': 1}]
     >>> keysort(my_list, ['code', 'number'])
-    [{'code': 'alpha', 'number': 0}, {'code': 'beta', 'number': 2}, {'code': 'beta', 'number': 3}, {'code': 'charlie', 'number': 1}, {'code': 'delta', 'number': 2}]
-    # sorted first by 'code', then 'number':
-    # [{'code': 'alpha',   'number': 0}, 
-    #  {'code': 'beta',    'number': 2},
-    #  {'code': 'beta',    'number': 3},
-    #  {'code': 'charlie', 'number': 1},
-    #  {'code': 'delta',   'number': 2}]
+    [{'code': 'alpha',   'number': 0},
+     {'code': 'beta',    'number': 2},
+     {'code': 'beta',    'number': 3},
+     {'code': 'charlie', 'number': 1},
+     {'code': 'delta',   'number': 2}]
     >>> keysort(my_list, ['number', 'code'])
-    [{'code': 'alpha', 'number': 0}, {'code': 'charlie', 'number': 1}, {'code': 'beta', 'number': 2}, {'code': 'delta', 'number': 2}, {'code': 'beta', 'number': 3}]
-    # sorted first by 'number', then 'code':
-    # [{'code': 'alpha',   'number': 0},
-    #  {'code': 'charlie', 'number': 1},
-    #  {'code': 'beta',    'number': 2},
-    #  {'code': 'delta',   'number': 2},
-    #  {'code': 'beta',    'number': 3}]
+    [{'code': 'alpha',   'number': 0},
+     {'code': 'charlie', 'number': 1},
+     {'code': 'beta',    'number': 2},
+     {'code': 'delta',   'number': 2},
+     {'code': 'beta',    'number': 3}]
 
 
 Install
