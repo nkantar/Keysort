@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="Keysort",
-    version="0.1.2",
+    version="0.1.3",
     author="Nik Kantar",
     author_email="nik@nkantar.com",
     description="A small utility for sorting lists of dictionaries by dictionary key",
