@@ -1,6 +1,12 @@
 # Keysort Changelog
 
 
+## [0.1.3] - 2019-02-15
+
+### Added
+- Windows testing via AppVeyor. :)
+
+
 ## [0.1.2] - 2019-02-15
 
 ### Changed
@@ -29,7 +35,8 @@
 - .gitignore
 
 
-[Unreleased]: https://github.com/nkantar/Keysort/compare/0.1.2...HEAD
+[Unreleased]: https://github.com/nkantar/Keysort/compare/0.1.3...HEAD
+[0.1.3]: https://github.com/nkantar/Keysort/compare/0.1.2...0.1.3
 [0.1.2]: https://github.com/nkantar/Keysort/compare/0.1.1...0.1.2
 [0.1.1]: https://github.com/nkantar/Keysort/compare/0.1.0...0.1.1
 [0.1.0]: https://github.com/nkantar/Keysort/releases/tag/0.1.0
