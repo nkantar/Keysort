@@ -1,14 +1,16 @@
-from setuptools import setup
+import setuptools
 
-setup(name = 'keysort',
-      packages = ['keysort'],
-      version = '0.1.1',
-      description = 'A small utility for sorting lists of dictionaries by dictionary key',
-      author = 'Nik Kantar',
-      author_email = 'nik@nkantar.com',
-      url = 'https://github.com/nkantar/Keysort',
-      download_url = 'https://github.com/nkantar/Keysort/tarball/0.1.1',
-      keywords = ['dictonary sorting'],
-      classifiers = [],
-      license = 'BSD-3-Clause',
-      zip_safe = False)
+with open("README.rst", "r") as fh:
+    long_description = fh.read()
+
+setuptools.setup(
+    name="Keysort",
+    version="0.1.2",
+    author="Nik Kantar",
+    author_email="nik@nkantar.com",
+    description="A small utility for sorting lists of dictionaries by dictionary key",
+    long_description=long_description,
+    long_description_content_type="text/x-rst",
+    url="https://github.com/nkantar/Keysort",
+    packages=setuptools.find_packages(),
+)
