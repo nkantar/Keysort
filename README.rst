@@ -5,6 +5,8 @@ Keysort: Sorting Lists of Dictionaries
 
 .. image:: https://travis-ci.org/nkantar/Keysort.svg?branch=master
     :target: https://travis-ci.org/nkantar/Keysort
+.. image:: https://ci.appveyor.com/api/projects/status/74nt0nnafahsntca/branch/master?svg=true
+    :target: https://ci.appveyor.com/project/nkantar/Keysort
 .. image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg 
    :target: https://saythanks.io/to/nkantar
 
