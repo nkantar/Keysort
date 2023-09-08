@@ -9,6 +9,7 @@ readme = "README.rst"
 [tool.poetry.dependencies]
 python = "^3.8"
 pytest-watch = "^4.2.0"
+mypy = "^1.5.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.2"

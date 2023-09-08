@@ -1,4 +1,7 @@
-def keysort(my_list, keys=[]):
+from typing import Any
+
+
+def keysort(my_list: list[Any], keys: list[Any] = []) -> list[Any]:
     if keys:
         first_key = keys[0]
         remaining_keys = keys[1:]
