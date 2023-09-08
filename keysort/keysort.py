@@ -6,7 +6,25 @@ functions the user is meant to utilize.
 """
 
 
-from typing import Any, List
+from typing import Any, List, Callable
+
+
+def _multisort(
+    call_func: Callable[..., Any],
+    key_func: Callable[..., Any],
+    my_list: List[Any],
+    keys: List[Any] = [],
+) -> List[Any]:
+    if keys:
+        first_key = keys[0]
+        remaining_keys = keys[1:]
+
+        presorted_list = call_func(my_list, remaining_keys)
+
+        return sorted(presorted_list, key=lambda row: key_func(row, first_key))
+
+    else:
+        return my_list
 
 
 def keysort(my_list: List[Any], keys: List[Any] = []) -> List[Any]:
@@ -20,13 +38,18 @@ def keysort(my_list: List[Any], keys: List[Any] = []) -> List[Any]:
         list: Sorted list of dictionaries.
 
     """
-    if keys:
-        first_key = keys[0]
-        remaining_keys = keys[1:]
+    return _multisort(keysort, dict.get, my_list, keys)
 
-        presorted_list = keysort(my_list, remaining_keys)
 
-        return sorted(presorted_list, key=lambda row: row[first_key])
+def attrsort(my_list: List[Any], attrs: List[Any] = []) -> List[Any]:
+    """Sort list of objects by values of multiple attributes.
 
-    else:
-        return my_list
+    Args:
+        my_list (list): List of objects to sort.
+        attrs (list): List of attributes by which to sort.
+
+    Returns:
+        list: Sorted list of objects.
+
+    """
+    return _multisort(attrsort, getattr, my_list, attrs)
