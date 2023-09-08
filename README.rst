@@ -1,39 +1,69 @@
 Keysort: Sorting Lists of Dictionaries
 ========================================================
 
-**Keysort** is small utility for sorting lists of dictionaries by dictionary key.
-
-.. image:: https://travis-ci.org/nkantar/Keysort.svg?branch=master
-    :target: https://travis-ci.org/nkantar/Keysort
-.. image:: https://ci.appveyor.com/api/projects/status/74nt0nnafahsntca/branch/master?svg=true
-    :target: https://ci.appveyor.com/project/nkantar/Keysort
-.. image:: https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg 
-   :target: https://saythanks.io/to/nkantar
+**Keysort** is small utility for sorting lists of dictionaries by dictionary keys and lists of objects by attributes.
 
 
 Examples
 --------
 
+Sorting dictionaries by keys:
+
 .. code-block:: python
 
     >>> from keysort import keysort
+    >>>
     >>> my_list = [{'code': 'beta',    'number': 3},
                    {'code': 'delta',   'number': 2},
                    {'code': 'alpha',   'number': 0},
                    {'code': 'beta',    'number': 2},
                    {'code': 'charlie', 'number': 1}]
+    >>>
     >>> keysort(my_list, ['code', 'number'])
     [{'code': 'alpha',   'number': 0},
      {'code': 'beta',    'number': 2},
      {'code': 'beta',    'number': 3},
      {'code': 'charlie', 'number': 1},
      {'code': 'delta',   'number': 2}]
+    >>>
     >>> keysort(my_list, ['number', 'code'])
     [{'code': 'alpha',   'number': 0},
      {'code': 'charlie', 'number': 1},
      {'code': 'beta',    'number': 2},
      {'code': 'delta',   'number': 2},
      {'code': 'beta',    'number': 3}]
+
+Sorting objects by attributes:
+
+.. code-block:: python
+
+    >>> from dataclasses import dataclass
+    >>> from keysort import attrsort
+    >>>
+    >>> @dataclass
+    ... class MyObj:
+    ...     code: str
+    ...     number: int
+    ...
+    >>> my_list = [MyObj(code='beta',    number=3),
+    ...            MyObj(code='delta',   number=2),
+    ...            MyObj(code='alpha',   number=0),
+    ...            MyObj(code='beta',    number=2),
+    ...            MyObj(code='charlie', number=1)]
+    >>>
+    >>> attrsort(my_list, ['code', 'number'])
+    [MyObj(code='alpha',   number=0),
+     MyObj(code='beta',    number=2),
+     MyObj(code='beta',    number=3),
+     MyObj(code='charlie', number=1),
+     MyObj(code='delta',   number=2)]
+    >>>
+    >>> attrsort(my_list, ['number', 'code'])
+    [MyObj(code='alpha',   number=0),
+     MyObj(code='charlie', number=1),
+     MyObj(code='beta',    number=2),
+     MyObj(code='delta',   number=2),
+     MyObj(code='beta',    number=3)]
 
 
 Install

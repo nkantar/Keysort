@@ -1,13 +1,13 @@
 # Keysort Changelog
 
+
 <!--
-headers:
-Added      - new features
-Changed    - changes in existing functionality
-Deprecated - soon-to-be removed features
-Removed    - now removed features
-Fixed      - any bug fixes
-Security   - in case of vulnerabilities
+- Added: for new features
+- Changed: for changes in existing functionality
+- Deprecated: for soon-to-be removed features
+- Removed: for now removed features
+- Fixed: for any bug fixes
+- Security: in case of vulnerabilities
 -->
 
 
@@ -16,6 +16,7 @@ Security   - in case of vulnerabilities
 ### Added
 - Type hints
 - Docstrings
+- `attrsort` for sorting objects by attributes
 
 
 ## [0.1.3] - 2019-02-15
