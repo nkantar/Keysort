@@ -1,5 +1,22 @@
 # Keysort Changelog
 
+<!--
+headers:
+Added      - new features
+Changed    - changes in existing functionality
+Deprecated - soon-to-be removed features
+Removed    - now removed features
+Fixed      - any bug fixes
+Security   - in case of vulnerabilities
+-->
+
+
+## [Unreleased]
+
+### Added
+- Type hints
+- Docstrings
+
 
 ## [0.1.3] - 2019-02-15
 
