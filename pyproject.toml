@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "keysort"
+version = "23.0.0"
+description = "A small utility for sorting lists of dictionaries by key"
+authors = ["Nik Kantar <nik@nkantar.com>"]
+license = "BSD-3-Clause"
+readme = "README.rst"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pytest-watch = "^4.2.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
