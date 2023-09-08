@@ -1,1 +1,1 @@
-from .keysort import *
+from .keysort import keysort  # noqa
