@@ -40,5 +40,5 @@ UNSORTED_LIST = [
 ]
 
 
-def test_keysort():
+def test_keysort() -> None:
     assert keysort(UNSORTED_LIST, ["col1", "col2", "col3"]) == SORTED_LIST

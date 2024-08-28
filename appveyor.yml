@@ -1,5 +1,0 @@
-version: '{branch}-{build}'
-build: "off"
-image: Visual Studio 2015
-test_script:
-  - python tests.py
