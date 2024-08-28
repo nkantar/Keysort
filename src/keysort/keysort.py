@@ -5,7 +5,6 @@ This module provides all of Keysort's functionality by exposing
 functions the user is meant to utilize.
 """
 
-
 from typing import Any, List, Callable
 
 

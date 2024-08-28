@@ -1,22 +1,36 @@
-[tool.poetry]
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
 name = "keysort"
 version = "23.0.0"
+dependencies = []
+requires-python = ">=3.9"
+authors = [
+    {name = "Nik Kantar", email = "nik@nkantar.com" },
+]
 description = "A small utility for sorting lists of dictionaries by key"
-authors = ["Nik Kantar <nik@nkantar.com>"]
-license = "BSD-3-Clause"
 readme = "README.rst"
+license = {file = "LICENSE"}
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
 
-[tool.poetry.dependencies]
-python = "^3.8"
-
-[tool.poetry.group.dev.dependencies]
-pytest = "^7.4.2"
-black = "^23.7.0"
-pytest-watch = "^4.2.0"
-mypy = "^1.5.1"
-ruff = "^0.0.287"
-pydocstyle = "^6.3.0"
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.6.2",
+    "pytest>=8.3.2",
+    "pydocstyle>=6.3.0",
+    "mypy>=1.11.2",
+    "pdbpp>=0.10.3",
+]

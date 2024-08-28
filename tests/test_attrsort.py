@@ -49,5 +49,5 @@ UNSORTED_LIST = [
 ]
 
 
-def test_attrsort():
+def test_attrsort() -> None:
     assert attrsort(UNSORTED_LIST, ["col1", "col2", "col3"]) == SORTED_LIST
