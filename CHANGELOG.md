@@ -17,7 +17,7 @@
 - Type hints
 - Docstrings
 - `attrsort` for sorting objects by attributes
-- Python 3.12 and 3.13-dev to CI version matrix
+- Python 3.12, 3.13, and 3.14-dev to CI version matrix
 
 ### Removed
 - Python 3.8 from CI version matrix
